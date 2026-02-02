@@ -1,73 +1,44 @@
-# React + TypeScript + Vite
+# Portfólio Pessoal Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de portfólio pessoal moderno e responsivo, desenvolvido com tecnologias de ponta para garantir performance e uma excelente experiência de usuário.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **[React](https://react.dev/)**: Biblioteca JavaScript para construção de interfaces.
+- **[TypeScript](https://www.typescriptlang.org/)**: Superset do JavaScript que adiciona tipagem estática.
+- **[Vite](https://vitejs.dev/)**: Build tool ultrarrápida para desenvolvimento web moderno.
+- **[Tailwind CSS](https://tailwindcss.com/)**: Framework CSS utility-first para estilização rápida e responsiva.
+- **[Framer Motion](https://www.framer.com/motion/)**: Biblioteca para animações fluidas e complexas.
+- **[Lenis](https://lenis.studio/)**: Smooth scrolling para uma navegação suave.
 
-## React Compiler
+## ✨ Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Design Responsivo**: Adaptado para mobile, tablet e desktop.
+- **Animações Fluidas**: Uso de Framer Motion para transições de elementos.
+- **Modo Noturno/Estrelas**: Background interativo com efeito de estrelas e meteoro.
+- **Spotlight Effect**: Efeito de iluminação dinâmico na seção "Sobre".
+- **Configuração Centralizada**: Arquivo `config.ts` para fácil personalização de textos e cores.
 
-## Expanding the ESLint configuration
+## 🛠️ Como Rodar o Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/xMargi/Portifolio-Web.git
+    cd Portifolio-Web
+    ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+3.  **Rode o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4.  Abra `http://localhost:5173` no seu navegador.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📄 Licença
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Este projeto está sob a licença MIT. Sinta-se à vontade para usar e modificar.
