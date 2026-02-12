@@ -102,7 +102,7 @@ function About() {
                     </h1>
                 </div>
             </div>
-            <div className="relative w-full min-h-screen bg-black overflow-hidden">
+            <div className="relative w-full py-30 bg-black overflow-hidden">
 
                 <Spotlight height={2400} translateY={-650} />
 

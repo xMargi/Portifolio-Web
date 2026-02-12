@@ -15,7 +15,7 @@ function Home() {
                     <p className='font-noto mt-6 mb-4 text-[16px] md:text-[18px]'>{config.home.paragraph}</p>
                 </div>
                 <div className='flex gap-5 justify-center lg:justify-start w-full lg:w-auto'>
-                    <a href={`${config.home.links[0].link}`} target='_blank' style={{ '--home-color': config.home.color } as React.CSSProperties} className='hover:text-[var(--home-color)]'><Linkedin/></a>
+                    <a href={`${config.home.links[0].link}`} target='_blank' style={{ '--home-color': config.home.color } as React.CSSProperties} className='hover:text-[var(--home-color)]'><Linkedin /></a>
                     <a href={`${config.home.links[1].link}`} target='_blank' style={{ '--home-color': config.home.color } as React.CSSProperties} className='hover:text-[var(--home-color)]'><Github /></a>
                     <a href={`${config.home.links[2].link}`} target='_blank' style={{ '--home-color': config.home.color } as React.CSSProperties} className='hover:text-[var(--home-color)]'><Mail /></a>
                 </div>

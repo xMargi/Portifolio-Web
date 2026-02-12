@@ -10,6 +10,7 @@ function NavBar() {
     const navItems = [
         { name: "Home", link: "#home" },
         { name: "Sobre", link: "#about" },
+        {name: "Habilidades", link: "#skills"},
         { name: "Projetos", link: "#projects" },
         { name: "Contato", link: "#contact" },
     ];
