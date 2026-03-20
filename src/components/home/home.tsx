@@ -1,6 +1,6 @@
 import { Linkedin, Github, Mail } from 'lucide-react'
-import { BackgroundRippleEffect } from "../ui/background-ripple-effect";
 import config from '../../config/config.ts'
+import { BackgroundRippleEffect } from '../ui/background-ripple-effect.tsx';
 
 function Home() {
 

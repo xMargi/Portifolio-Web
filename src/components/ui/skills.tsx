@@ -69,6 +69,9 @@ const accentClasses = {
 
 
 
+// ─── SkillsStatsRow ───────────────────────────────────────────────────────────
+// Declared BEFORE SkillsGrid so child.type !== SkillsStatsRow works correctly
+
 export const SkillsStatsRow = ({
     stats,
     className = "",
@@ -83,18 +86,17 @@ export const SkillsStatsRow = ({
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.3 }}
             style={{ gridColumn: "1 / -1" }}
-            className={cn("bg-[#222224] mt-[2px]", className)}
+            className={cn("bg-white/[0.06] mt-[2px] overflow-hidden rounded-[1px]", className)}
         >
             <div
-                className="grid divide-x divide-white/[0.06]"
-                style={{ gridTemplateColumns: `repeat(${stats.length}, 1fr)` }}
+                className="grid gap-px grid-cols-2 md:grid-cols-4 bg-white/[0.06]"
             >
                 {stats.map((stat, i) => (
-                    <div key={i} className="flex flex-col items-center justify-center py-5 px-4">
-                        <span className="font-['Bebas_Neue',sans-serif] text-[40px] leading-none tracking-wide bg-gradient-to-br from-white/90 to-white/40 bg-clip-text text-transparent">
+                    <div key={i} className="flex flex-col items-center justify-center py-5 px-4 bg-[#222224]">
+                        <span className="font-['Bebas_Neue',sans-serif] text-[30px] md:text-[40px] leading-none tracking-wide bg-gradient-to-br from-white/90 to-white/40 bg-clip-text text-transparent">
                             {stat.value}
                         </span>
-                        <span className="text-[10px] uppercase tracking-[0.22em] text-white/30 mt-1">
+                        <span className="text-[10px] uppercase tracking-[0.22em] text-white/30 mt-1 text-center">
                             {stat.label}
                         </span>
                     </div>
@@ -107,6 +109,7 @@ export const SkillsStatsRow = ({
 SkillsStatsRow.displayName = "SkillsStatsRow";
 
 
+// ─── SkillsGrid ───────────────────────────────────────────────────────────────
 
 export const SkillsGrid = ({
     children,
@@ -115,7 +118,6 @@ export const SkillsGrid = ({
     className = "",
 }: SkillsGridProps) => {
     const childArray = React.Children.toArray(children);
-
 
     const isStatsRow = (child: React.ReactNode): boolean => {
         return (
@@ -137,20 +139,25 @@ export const SkillsGrid = ({
         const isPenultimate = index === sections.length - 2;
         const applyEvenFix = !isOdd && isPenultimate;
 
-        if ((isOdd && isLast) || applyEvenFix) {
-            return (
-                <div key={index} style={{ gridColumn: "1 / -1" }}>
-                    {child}
-                </div>
-            );
-        }
-        return child;
+        return (
+            <div
+                key={index}
+                className={cn(
+                    ((isOdd && isLast) || applyEvenFix) ? "col-span-1 md:col-span-2" : "col-span-1"
+                )}
+            >
+                {child}
+            </div>
+        );
     });
 
     return (
         <div
-            style={{ gridTemplateColumns: `repeat(${columns}, 1fr)`, gap }}
-            className={cn("grid w-full text-white", className)}
+            style={{ gap }}
+            className={cn(
+                "grid w-full text-white grid-cols-1 md:grid-cols-2",
+                className
+            )}
         >
             {wrappedSections}
             {statsRows}

@@ -7,13 +7,13 @@ import config from '../../config/config.ts';
 function Skills() {
 
     return (
-        <div className='h-full w-full relative'>
+        <div className='min-h-screen w-full relative'>
             <StarsBackground />
             <ShootingStars />
-            <div className='bg-black/80 flex flex-col items-center gap-40 p-25 min-h-screen font-roboto'>
+            <div className='bg-black/90 flex flex-col items-center gap-10 md:gap-30 p-5 md:p-25 min-h-screen font-roboto'>
                 <div className='flex items-center flex-col'>
-                    <p className='uppercase text-lg '>O que sei fazer</p>
-                    <h1 className='text-6xl text-white uppercase font-bebas'>{config.skills.title}</h1>
+                    <p className='uppercase text-2xl text-white'>Minhas</p>
+                    <h1 className='text-4xl md:text-8xl text-white uppercase font-bebas'>{config.skills.title}</h1>
                 </div>
                 <SkillsGrid>
 
@@ -31,7 +31,7 @@ function Skills() {
                                     title={skill.title}
                                     icon={skill.icon}
                                     percentage={skill.percentage}
-                                    accent={skill.accent || section.accent} // Fallback to section accent if not specified
+                                    accent={skill.accent || section.accent} 
                                     index={skillIndex}
                                 />
                             ))}

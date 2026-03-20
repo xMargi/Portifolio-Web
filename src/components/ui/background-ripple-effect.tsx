@@ -1,12 +1,11 @@
 "use client";
 import React, { useMemo, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
-import config from '../../config/config.ts'
 
 export const BackgroundRippleEffect = ({
-  rows = 15,
+  rows = 17,
   cols = 35,
-  cellSize = 61,
+  cellSize = 56,
 }: {
   rows?: number;
   cols?: number;
@@ -22,11 +21,10 @@ export const BackgroundRippleEffect = ({
   return (
     <div
       ref={ref}
-      style={{ '--home-color': config.home.color } as React.CSSProperties}
       className={cn(
         "absolute inset-0 h-full w-full",
-        "[--cell-border-color:var(--color-neutral-300)] [--cell-fill-color:var(--color-neutral-100)] [--cell-ripple-color:var(--home-color)] [--cell-shadow-color:var(--color-neutral-500)]",
-        "dark:[--cell-border-color:var(--color-neutral-700)] dark:[--cell-fill-color:var(--color-neutral-900)] dark:[--cell-ripple-color:var(--home-color)] dark:[--cell-shadow-color:var(--color-neutral-800)]",
+        "[--cell-border-color:var(--color-neutral-300)] [--cell-fill-color:var(--color-neutral-100)] [--cell-shadow-color:var(--color-neutral-500)] [--cell-ripple-color:#005b4a]",
+        "dark:[--cell-border-color:#005b4a] dark:[--cell-fill-color:#005b4a] dark:[--cell-shadow-color:var(--color-neutral-800)] dark:[--cell-ripple-color:#005b4a]",
       )}
     >
       <div className="relative h-auto w-auto overflow-hidden">
@@ -76,7 +74,7 @@ const DivGrid = ({
   borderColor = "#3f3f46",
   fillColor = "rgba(14,165,233,0.3)",
   clickedCell = null,
-  onCellClick = () => {},
+  onCellClick = () => { },
   interactive = true,
 }: DivGridProps) => {
   const cells = useMemo(
@@ -106,9 +104,9 @@ const DivGrid = ({
 
         const style: CellStyle = clickedCell
           ? {
-              "--delay": `${delay}ms`,
-              "--duration": `${duration}ms`,
-            }
+            "--delay": `${delay}ms`,
+            "--duration": `${duration}ms`,
+          }
           : {};
 
         return (
