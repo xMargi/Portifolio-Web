@@ -98,7 +98,7 @@ export const Contact = () => {
                             </div>
                             <div className="flex flex-col gap-1 group cursor-pointer">
                                 <span className="text-[10px] uppercase tracking-[0.3em] text-white/40">linkedin</span>
-                                <a href="https://www.linkedin.com/in/vinicius-moreira-siqueira" target="_blank" className="text-white/70 text-sm group-hover:text-white transition-colors duration-300">https://www.linkedin.com/in/vinicius-moreira-siqueira</a>
+                                <a href="https://www.linkedin.com/in/vinicius-moreira-siqueira" target="_blank" className="text-white/70 text-sm group-hover:text-white transition-colors duration-300">www.linkedin.com/in/vinicius-moreira-siqueira</a>
                             </div>
                         </div>
 

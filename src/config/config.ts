@@ -73,13 +73,13 @@ const config: AppConfig = {
         paragraph: "Estudante do 3º período de Análise e Desenvolvimento de Sistemas, em busca de uma oportunidade de estágio em desenvolvimento de software, com interesse em desenvolvimento web, aplicações full stack e construção de interfaces modernas e APIs escaláveis.",
 
         links: [{
-            link: "https://google.com.br",
+            link: "https://www.linkedin.com/in/vinicius-moreira-siqueira",
         },
         {
-            link: "https://google.com.br",
+            link: "https://github.com/xMargi",
         },
         {
-            link: "https://google.com.br",
+            link: "mailto:viniciusff200@gmail.com",
         }
         ]
     },
