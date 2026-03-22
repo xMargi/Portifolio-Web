@@ -1,4 +1,4 @@
-import type { Project } from "@/components/projects/Projects"
+import type { Project } from "@/types/project"
 import { useEffect, useState } from "react"
 
 interface GithubRepo {

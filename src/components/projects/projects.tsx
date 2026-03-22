@@ -12,7 +12,7 @@ import { useGithubRepos } from '@/hooks/useGithubRepos'
 // }
 // ]
 
-export interface Project {
+interface Project {
     firstImgUrl: string
     title: string
     description: string
