@@ -59,9 +59,9 @@ export const Projects = () => {
             {/* Carousel */}
             <div className="w-full overflow-hidden" ref={emblaRef} key={repositories.repos.length}>
                 <div className="flex">
-                    {chunks.map((page, pageIndex) => (
+                    {chunks.map((page: Project[], pageIndex: number) => (
                         <div className="flex flex-col sm:flex-row gap-4 min-w-full" key={pageIndex}>
-                            {page.map((item, itemIndex) => (
+                            {page.map((item: Project, itemIndex: number) => (
                                 <div
                                     key={itemIndex}
                                     className="
@@ -77,8 +77,7 @@ export const Projects = () => {
                                         <img
                                             src={item.firstImgUrl}
                                             alt=""
-                                            className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110"
-                                        />
+                                            className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110"/>
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                                         <span className="absolute top-3 right-3 text-[10px] font-mono text-white/30 tracking-widest">
                                             {String(itemIndex + 1 + pageIndex * itemsPerPage).padStart(2, '0')}
@@ -96,7 +95,7 @@ export const Projects = () => {
                                         <div className="h-px bg-white/[0.08]" />
                                         <div className="flex flex-col gap-2 w-full">
                                             <div className="flex items-center gap-1.5 flex-wrap">
-                                                {item.stackImageUrl.map((stack, index) => (
+                                                {item.stackImageUrl.map((stack:string, index:number) => (
                                                     <span key={index} className="text-[10px] uppercase tracking-widest text-white/50 border border-white/10 rounded-full px-2 py-0.5">
                                                         {stack}
                                                     </span>
