@@ -143,7 +143,7 @@ export const SkillsGrid = ({
             <div
                 key={index}
                 className={cn(
-                    ((isOdd && isLast) || applyEvenFix) ? "col-span-1 md:col-span-2" : "col-span-1"
+                    ((isOdd && isLast) || applyEvenFix) ? "col-span-1 md:col-span-2" : "col-span-1", "h-full"
                 )}
             >
                 {child}
@@ -184,7 +184,7 @@ export const SkillSection = ({
     return (
         <div
             className={cn(
-                "relative bg-[#222224] px-10 py-9 overflow-hidden",
+                "relative bg-[#222224] px-10 py-9 overflow-hidden h-full",
                 className
             )}
         >
@@ -270,12 +270,11 @@ export const SkillProgress = ({
             <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center gap-2.5">
                     {icon && (
-                        <span
-                            className="w-[22px] h-[22px] rounded-[4px] flex items-center justify-center text-[12px]
-                         bg-white/[0.05] border border-white/[0.08] flex-shrink-0"
-                        >
-                            {icon}
-                        </span>
+                        <img
+                            src={icon}
+                            alt={title}
+                            className="w-[22px] h-[22px] rounded-[4px] flex-shrink-0"
+                        />
                     )}
                     <span className="text-[11px] font-medium uppercase tracking-[0.15em] text-white/85">
                         {title}
