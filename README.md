@@ -1,47 +1,44 @@
+# Portfólio Pessoal 🚀
+
+Portfólio pessoal moderno e responsivo, com integração automática com o GitHub para exibir projetos e formulário de contato funcional.
 
 ![Portifolio](https://github.com/user-attachments/assets/eea46bdb-7887-4989-98bf-fcd1da6d718c)
 
-# Portfólio Pessoal Web
+## 🚀 Tecnologias
 
-Este é um projeto de portfólio pessoal moderno e responsivo, desenvolvido com tecnologias de ponta para garantir performance e uma excelente experiência de usuário.
-
-## 🚀 Tecnologias Utilizadas
-
-- **[React](https://react.dev/)**: Biblioteca JavaScript para construção de interfaces.
-- **[TypeScript](https://www.typescriptlang.org/)**: Superset do JavaScript que adiciona tipagem estática.
-- **[Vite](https://vitejs.dev/)**: Build tool ultrarrápida para desenvolvimento web moderno.
-- **[Tailwind CSS](https://tailwindcss.com/)**: Framework CSS utility-first para estilização rápida e responsiva.
-- **[Framer Motion](https://www.framer.com/motion/)**: Biblioteca para animações fluidas e complexas.
-- **[Lenis](https://lenis.studio/)**: Smooth scrolling para uma navegação suave.
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Embla Carousel
+- Zod
+- React Hook Form
+- EmailJS
+- Lenis
 
 ## ✨ Funcionalidades
 
-- **Design Responsivo**: Adaptado para mobile, tablet e desktop.
-- **Animações Fluidas**: Uso de Framer Motion para transições de elementos.
-- **Modo Noturno/Estrelas**: Background interativo com efeito de estrelas e meteoro.
-- **Spotlight Effect**: Efeito de iluminação dinâmico na seção "Sobre".
-- **Configuração Centralizada**: Arquivo `config.ts` para fácil personalização de textos e cores.
+- Design responsivo para mobile, tablet e desktop
+- Animações fluidas com Framer Motion
+- Background interativo com estrelas e meteoros
+- Efeito spotlight dinâmico na seção "Sobre"
+- Seção de projetos com carrossel paginado buscando dados automaticamente da API do GitHub
+- Imagem de preview extraída do README de cada repositório
+- Stacks exibidas via topics do GitHub
+- Formulário de contato com validação Zod e envio via EmailJS
+- Configuração centralizada via `config.ts`
 
-## 🛠️ Como Rodar o Projeto
+## ⚙️ Como rodar
+```bash
+git clone https://github.com/xMargi/Portifolio-Web.git
+cd Portifolio-Web
+npm install
+npm run dev
+```
 
-1.  **Clone o repositório:**
-    ```bash
-    git clone https://github.com/xMargi/Portifolio-Web.git
-    cd Portifolio-Web
-    ```
-
-2.  **Instale as dependências:**
-    ```bash
-    npm install
-    ```
-
-3.  **Rode o servidor de desenvolvimento:**
-    ```bash
-    npm run dev
-    ```
-
-4.  Abra `http://localhost:5173` no seu navegador.
+Acesse `http://localhost:5173`
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT. Sinta-se à vontade para usar e modificar.
+MIT
