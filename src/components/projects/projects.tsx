@@ -94,8 +94,8 @@ export const Projects = () => {
                                             {item.description}
                                         </p>
                                         <div className="h-px bg-white/[0.08]" />
-                                        <div className="flex justify-between items-center">
-                                            <div className="flex items-center gap-1.5">
+                                        <div className="flex flex-col gap-2 w-full">
+                                            <div className="flex items-center gap-1.5 flex-wrap">
                                                 {item.stackImageUrl.map((stack, index) => (
                                                     <span key={index} className="text-[10px] uppercase tracking-widest text-white/50 border border-white/10 rounded-full px-2 py-0.5">
                                                         {stack}
@@ -103,11 +103,11 @@ export const Projects = () => {
                                                 ))}
                                             </div>
                                             <a className="
-                                                text-[10px] uppercase tracking-[0.2em] text-white/40
-                                                border border-white/10 rounded-full px-3 py-1
-                                                transition-all duration-300
-                                                hover:text-white hover:border-white/40 hover:bg-white/5
-                                            " href={item.html_url} target='_blank' rel='noreferrer'>
+                                                    self-start text-[10px] uppercase tracking-[0.2em] text-white/40
+                                                    border border-white/10 rounded-full px-3 py-1
+                                                    transition-all duration-300
+                                                    hover:text-white hover:border-white/40 hover:bg-white/5
+                                                " href={item.html_url} target='_blank' rel='noreferrer'>
                                                 Link Repositório →
                                             </a>
                                         </div>
