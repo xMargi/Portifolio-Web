@@ -13,8 +13,6 @@ dist-ssr
 *.local
 
 .env
-/public/images/
-/public/logo/
 
 setup_git.ps1
 
