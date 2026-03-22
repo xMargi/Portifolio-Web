@@ -1,3 +1,6 @@
+
+![Portifolio](https://github.com/user-attachments/assets/eea46bdb-7887-4989-98bf-fcd1da6d718c)
+
 # Portfólio Pessoal Web
 
 Este é um projeto de portfólio pessoal moderno e responsivo, desenvolvido com tecnologias de ponta para garantir performance e uma excelente experiência de usuário.
