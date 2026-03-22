@@ -61,7 +61,7 @@ interface AppConfig {
 const config: AppConfig = {
     navBar: {
         color: "#005b4a",
-        logoSrc: "./logo/logo-borda-vermelha.png"
+        logoSrc: "./logo/logo_vinicius_vintage.png"
     },
 
     home: {
@@ -87,7 +87,7 @@ const config: AppConfig = {
     about: {
         title: "Desenvolvedor Full Stack | Estudante de ADS",
         color: "#005b4a",
-        imgSrc: "./images/street.png",
+        imgSrc: "./images/eu2.jpeg",
         paragraph: [
             "Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente no 3º período, com 22 anos, e estudo programação de forma consistente desde 2023. Nesse período, venho construindo uma base sólida em desenvolvimento por meio de prática contínua e formações especializadas, incluindo cursos pela Alura e pela OneBitCode.",
 
