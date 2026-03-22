@@ -106,12 +106,12 @@ const config: AppConfig = {
                 accent: "lime",
                 tags: ["FrontEnd", "Componentes", "Performance"],
                 skills: [
-                    { title: "React", icon: "🎨", percentage: 75 },
-                    { title: "Typescript", icon: "🖼", percentage: 83 },
-                    { title: "Javascript", icon: "⬡", percentage: 83 },
-                    { title: "HTML", icon: "✏️", percentage: 90 },
-                    { title: "Css", icon: "✏️", percentage: 90 },
-                    { title: "Tailwind", icon: "✏️", percentage: 70 },
+                    { title: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", percentage: 75 },
+                    { title: "Typescript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", percentage: 83 },
+                    { title: "Javascript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", percentage: 83 },
+                    { title: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", percentage: 90 },
+                    { title: "Css", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", percentage: 90 },
+                    { title: "Tailwind", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg", percentage: 70 },
                 ]
             },
             {
@@ -120,12 +120,11 @@ const config: AppConfig = {
                 accent: "sky",
                 tags: ["BackEnd", "Estrutura", "Api", "Rotas"],
                 skills: [
-                    { title: "Express", icon: "⚛", percentage: 80 },
-                    { title: "Node.js", icon: "🔷", percentage: 85 },
-                    { title: "SQL", icon: "🌊", percentage: 83 },
-                    { title: "PostgreSQL", icon: "🟨", percentage: 80 },
-                    { title: "Prisma", icon: "🟨", percentage: 75 },
-                    { title: "JWT / Auth", icon: "🟨", percentage: 88 },
+                    { title: "Express", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", percentage: 80 },
+                    { title: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", percentage: 85 },
+                    { title: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", percentage: 80 },
+                    { title: "Prisma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg", percentage: 75 },
+                    { title: "JWT / Auth", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", percentage: 88 },
                 ]
             },
             {
@@ -134,8 +133,8 @@ const config: AppConfig = {
                 accent: "sky",
                 tags: ["Tools"],
                 skills: [
-                    { title: "Git", icon: "⚛", percentage: 75 },
-                    { title: "Vite", icon: "🔷", percentage: 85 },
+                    { title: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", percentage: 75 },
+                    { title: "Vite", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg", percentage: 85 },
                 ]
             }
         ],
