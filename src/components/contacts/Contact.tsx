@@ -90,15 +90,15 @@ export const Contact = () => {
                         <div className="flex flex-col gap-5">
                             <div className="flex flex-col gap-1 group cursor-pointer">
                                 <span className="text-[10px] uppercase tracking-[0.3em] text-white/40">email</span>
-                                <span className="text-white/70 text-sm group-hover:text-white transition-colors duration-300">seu@email.com</span>
+                                <a href="mailto:viniciusff200@gmail.com" target="_blank" className="text-white/70 text-sm group-hover:text-white transition-colors duration-300">viniciusff200@gmail.com</a>
                             </div>
                             <div className="flex flex-col gap-1 group cursor-pointer">
                                 <span className="text-[10px] uppercase tracking-[0.3em] text-white/40">github</span>
-                                <span className="text-white/70 text-sm group-hover:text-white transition-colors duration-300">github.com/xMargi</span>
+                                <a href="https://github.com/xMargi" target="_blank" className="text-white/70 text-sm group-hover:text-white transition-colors duration-300">github.com/xMargi</a>
                             </div>
                             <div className="flex flex-col gap-1 group cursor-pointer">
                                 <span className="text-[10px] uppercase tracking-[0.3em] text-white/40">linkedin</span>
-                                <span className="text-white/70 text-sm group-hover:text-white transition-colors duration-300">linkedin.com/in/seu-perfil</span>
+                                <a href="https://www.linkedin.com/in/vinicius-moreira-siqueira" target="_blank" className="text-white/70 text-sm group-hover:text-white transition-colors duration-300">https://www.linkedin.com/in/vinicius-moreira-siqueira</a>
                             </div>
                         </div>
 
